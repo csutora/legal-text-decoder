@@ -76,7 +76,7 @@ Before submitting your project, ensure you have completed the following steps.
 
 ### Project Information
 
-- **Selected Topic**: [Enter Topic Name Here]
+- **Selected Topic**: [Enter Topic Name Here, options: AnkleAlign, Legal Text Decoder, Bull-flag detector, End-of-trip delay prediction]
 - **Student Name**: [Enter Your Name Here]
 - **Aiming for +1 Mark**: [Yes/No]
 
