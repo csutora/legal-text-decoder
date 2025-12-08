@@ -1,10 +1,22 @@
-# NOTE: Extend this file with additional packages and specific versions required by your project.
-# For example, add dataset-specific libraries, experiment tracking or GPU tooling as needed.
+# Legal Text Decoder - Requirements
+# Python 3.10+
 
-pandas==2.2.2
-pandas==2.2.2
-scikit-learn==1.5.0
-matplotlib==3.9.0
-seaborn==0.13.2
-torch==2.3.0
-torchvision==0.18.0
+# Deep Learning
+torch>=2.3.0
+transformers>=4.40.0
+
+# Data Processing
+numpy>=1.24.0
+pandas>=2.2.0
+scikit-learn>=1.5.0
+
+# Visualization
+matplotlib>=3.9.0
+seaborn>=0.13.0
+
+# Web Application
+gradio>=4.0.0
+
+# Utilities
+tqdm>=4.65.0
+joblib>=1.3.0

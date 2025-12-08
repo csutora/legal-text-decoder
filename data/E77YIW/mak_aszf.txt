@@ -1,0 +1,105 @@
+(1) A Bank Szerződést köthet a Kincstári ügyféllel, ha
+a) a Hirdetményben közzétett szerződéskötési feltételeknek megfelel, és
+b) a kártyahasználattal összefüggő kizáró körülmény nem áll fenn.
+(2) A szerződéskötéshez szükséges kártyaigénylő csomag a Kincstár honlapjáról letölthető, vagy külön kérésre a Kincstári számlavezető helyen, illetve a Bank Közreműködő fiókjában beszerezhető és az alábbi formanyomtatványokat tartalmazza:
+a) Kincstári Bankkártya Szerződés
+b) Adatlap(ok),
+c) ÁSZF,
+d) Hirdetmény,
+e) a Bank által a Szerződésben, illetve a fent megjelölt dokumentumokban ilyennek minősített egyéb dokumentumok.
+(3) A Bank és a kincstári ügyfél közötti jogviszonyt a Szerződés hozza létre.
+(4) A Szerződő Fél az Adatlap(ok) kitöltésével igényelhet, vagy szüntethet meg egy-egy Kártyát, illetve változtathatja meg annak kondícióit vagy funkcióit. A Szerződő Fél a Szerződéshez kapcsolódóan egyidejűleg több Kártyát is igényelhet.
+2. (1) A Szerződő Fél az általa kitöltött és aláírt Kincstári Bankkártya Szerződést, valamint az ahhoz kapcsolódó és érvényességi feltételként a leendő Kártyabirtokossal is aláíratott Adatlapot a Kincstári számlavezető helyhez juttathatja el.
+(2) A Kincstári számlavezető hely a nyomtatványok kézhezvételét követően azokat tartalmi és formai szempontból haladéktalanul megvizsgálja, és ennek alapján
+a) a megfelelőnek talált nyomtatványokat érvényességi feltételként ellenjegyzi és haladéktalanul eljuttatja a Kincstár központjához, illetőleg
+b) a nem megfelelő vagy jogosulatlanul benyújtott nyomtatványokat visszajuttatja a Szerződő Félnek.
+(3) A Szerződő Fél által aláírt nyomtatványok a Szerződő Fél által tett egyoldalú ajánlatkérésnek minősülnek.
+3. (1) A Kincstári Kártyákra vonatkozó Keretmegállapodás alapján a Szerződést a Bank jognyilatkozati meghatalmazottjaként a Kincstár köti meg.
+(2) A Kincstár a Bank jognyilatkozati meghatalmazottjaként az ellenjegyzett nyomtatványok kézhezvételét követően azokat tartalmi és formai szempontból haladéktalanul megvizsgálja, ellenőrzi a szerződéskötési feltételek fennállását, valamint az esetleges kizáró körülményeket, és ennek alapján
+a) aláírásával látja el a Kincstári Bankkártya Szerződést és az Adatlapo(ka)t, illetve
+b) jogosult indokolás nélkül elutasítani a Szerződés megkötését, amelyről – a nyomtatványok egyidejű visszaküldése mellett – haladéktalanul értesíti a benyújtó kincstári ügyfelet.
+(3) A Szerződés a Kincstár, mint jognyilatkozati meghatalmazott által történő aláírás időpontjában lép hatályba, határozatlan időre. A hatályos Szerződés és az ahhoz kapcsolódó érvényes 
+4. (1) A Szerződés módosítása történhet
+a) automatikusan, a jogviszonnyal összefüggő vagy a Bank, illetve Kincstár tevékenységét érintő jogszabályok, továbbá a Bankra vagy Kincstárra, illetőleg a Szerződő félre kötelező érvényű egyéb szabályozó eszközök változásával,
+b) új Adatlapon rögzített kétoldalú, egybehangzó akaratnyilatkozattal (5-6. pont), illetve
+c) a Bank által egyoldalúan (7. pont).
+(2) A módosítás hatályba lépését követően a jogviszony tekintetében a jövőre nézve a módosításban foglaltak az irányadók.
+5. (1) Az új Adatlapon rögzített kétoldalú szerződésmódosítás kezdeményezésére a Szerződő fél, illetve a Bank jogosult.
+(2) A Szerződő fél által kezdeményezett szerződésmódosításnak minősülnek egyebek mellett az alábbi esetek:
+a) az Adatlapon megadott adatok, így különösen a Kártya kondícióinak vagy funkciójának, illetve a Kártyabirtokos adatainak megváltoztatása,
+b) az adott Kártya megszüntetése,
+c) az adott Kártyaszámlához kapcsolódó újabb Kártya igénylése,
+d) KártyaKontroll SMS szolgáltatás igénylése, módosítása vagy lemondása,
+d) Pótkártya igénylése.
+(3) Kétoldalú szerződés módosítás során a módosított adatok feltüntetése mellett az Adatlap kitöltési útmutatója alapján kell eljárni.
+6. (1) A Szerződő félnek az általa kezdeményezett módosítást tartalmazó új Adatlapot a szerződéskötésre vonatkozó rendelkezések alapján kell benyújtania.
+(2) A Kincstári számlavezető hely és a Kincstár, mint jognyilatkozati meghatalmazott
+a) a megfelelő Adatlapot a szerződéskötésre vonatkozó rendelkezések alapján dolgozzaföl,
+b) a hibás, a hiányos, az értelmezhetetlen, az ellentmondó vagy a teljesíthetetlen módosítást tartalmazó Adatlapot érvénytelennek tekinti, amelyről haladéktalanul értesíti a Szerződő felet.
+(3) Az érvényes módosítás a Kincstár, mint jognyilatkozati meghatalmazott által történő aláírás időpontjában lép hatályba.
+(4) Az érvényes módosítást tartalmazó Adatlap egy-egy eredeti példányát a nyomtatványt aláírók kapják kézhez.
+7. (1) A Bank a Kincstári Kártyákra vonatkozó Keretmegállapodás figyelembe vételével a Szerződés díjának, jutalékának, egyéb költségének mértékét és az egyéb szerződési feltételeket a Szerződés fennállása alatt jogosult egyoldalúan megváltoztatni jelen ÁSZFben foglaltaknak megfelelően.
+(2) Nem minősül egyoldalú szerződés módosításnak, amennyiben a Bank az ÁSZF hatálya alá tartozó olyan új szolgáltatásokat, pénzügyi eszközöket, ügyleteket vezet be, amelyeket a Szerződő fél részére elérhetővé tesz és melyeket a Szerződő fél kifejezetten elfogad.
+(3) A Bank felhívja a Szerződő Fél figyelmét arra, hogy a Szerződő Fél kísérje folyamatosan figyelemmel az ÁSZF és a Hirdetmény módosításait, valamint annak hatályos szövegét.
+(4) A Szerződéssel összefüggő díjak, jutalékok, illetve egyéb költségek mértékének az e pontban írottak szerinti megváltozása esetén a Szerződő fél köteles a Banknak az ily módon megváltozott mértékű díjat, jutalékot, egyéb költséget megfizetni.
+(5) A Bank a Kincstári Kártyákra vonatkozó Keretmegállapodás figyelembe vételével az alábbi okok bekövetkezése esetén jogosult a díjat, jutalékot, egyéb költséget és a szerződés egyéb feltételeit a Szerződő fél számára kedvezőtlenül, egyoldalúan módosítani:
+A) A jogi, szabályozói eszközök megváltozása
+a) A Bank tevékenységére, működési feltételeire vonatkozó vagy ahhoz kapcsolódó jogszabályváltozás, jegybanki rendelkezés vagy a Bankra kötelező egyéb szabályozó eszközök megváltozása,
+b) a Bank tevékenységéhez kapcsolható közteher – (pl. adó) – változása, a kötelező tartalékolási szabályok változása,
+c) kötelező betétbiztosítás összegének, vagy díjának változása.
+B) A pénzpiaci feltételek, a makrogazdasági környezet módosulása
+a) A Bank forrásköltségeinek változása/pénzpiaci forrásszerzési lehetőségek változása, így különösen, de nem kizárólagosan:
+aa) Magyarország hitelbesorolásának változása,
+ab) az országkockázati felár változása (credit defalult swap),
+ac) jegybanki alapkamat, jegybanki repo- és betéti kamatlábak változása,
+ad) a bankközi pénzpiaci kamatlábak/hitelkamatok változása,
+ae) a Magyar Állam vagy a hitelező által kibocsátott kötvény SWAP hozamgörbék egymáshoz képest történő elmozdulása,
+af) refinanszírozást biztosító, nyilvánosan kibocsátott értékpapír hozamának, illetve kibocsátója elismert külső hitelminősítő szervezet általi kockázati besorolásának változása vagy az ilyen besoroláshoz kapcsolódó költségek megváltozása,
+ag) a Bank lekötött ügyfélbetétei kamatának változása,
+b) a Nemzetközi Kártyaszervezetek által végrehajtott módosítások így különösen, de nem kizárólagosan:
+ba) kártyatársasági díjstruktúra változása,
+bb) kártyatársasági díjszabásra vonatkozó szabályok változása.
+(6) A Bank a Központi Statisztikai Hivatal által, a Központi Statisztikai Hivatal honlapján közzétett előző éves fogyasztói árindex (infláció) változása esetén jogosult a kapcsolódó, a 8.
+(1). pont alá nem tartozó díjak, jutalékok és egyéb költségek mértékét egyoldalúan, a Szerződő fél számára kedvezőtlenül módosítani.
+(7) A Bank a fentiek mellett vis maior események – így különösen hirtelen bekövetkező nagyfokú pénz- és tőkepiaci zavarok – bekövetkezése esetén jogosult átmenetileg, a zavarok fennállásáig egyoldalúan díjat, jutalékot, költséget a Szerződő fél számára kedvezőtlenül módosítani, bevezetni.
+(8) Díjat, jutalékot, egyéb költséget és a szerződés egyéb feltételeit csak akkor jogosult a Bank egyoldalúan, a Szerződő Fél számára kedvezőtlenül módosítani, ha a jelen ÁSZF 7. pontjában a Bank számára meghatározott feltételek, illetve körülmények megváltozása azt indokolttá teszi.
+A Bank a szerződésben meghatározott díjat, jutalékot, egyéb költséget és a szerződés egyéb feltételeit érintő módosítását annak hatálybalépését legalább 60 nappal megelőzően, a Kincstár honlapján megjelent Hirdetményben teszi közzé.
+(9) A Szerződő Fél jogosult a szerződést díjmentesen felmondani a díj, költség számára kedvezőtlen módosítása esetén a módosítás hatálybalépését megelőzően.
+(10) A Bank jogosult a jelen ÁSZF-ben foglalt (díjat, jutalékot, egyéb költséget nem érintő) szerződési feltételeit a 7. pontban meghatározott feltételek, illetve körülmények alapján, továbbá az alábbi feltételek, illetve körülmények esetén az Szerződő félre kedvezőtlenül egyoldalúan módosítani:
+a) a Bank által nyújtott szolgáltatások teljesítésével, fenntartásával összefüggő banküzemi eljárások, illetve elszámolási rend változása,
+b) a Bank által az Ügyfelek számára nyújtott új pénzügyi termék vagy szolgáltatás bevezetése, meglévő termékekkel kapcsolatos szolgáltatások módosítása, bővítése, fejlesztése, illetve valamely termék vagy szolgáltatás kivezetése, megszüntetése esetén.
+(11) A Bank a Kincstári Kártyákra vonatkozó Keretmegállapodás figyelembe vételével jogosult a termék vagy szolgáltatás kivezetése/módosítása esetén a Szerződő fél számára a kivezetett/módosított termék vagy szolgáltatás helyett, azzal egyenértékű vagy magasabb színvonalú termék vagy szolgáltatás rendelkezésre bocsátására a szerződés egyoldalú módosításával, oly módon, hogy a módosítást a termék vagy szolgáltatás kivezetését/módosítását 30 nappal megelőzően a Kincstár honlapján Hirdetmény útján közzé teszi.
+(12) A Bank a Szerződés módosítását a Szerződő fél részéről akkor tekinti elfogadottnak, ha a Szerződő fél a módosítás hatályba lépését megelőzően a Bankot nem tájékoztatja arról, hogy a módosítást nem fogadja el. A módosítás hatályba lépése előtti napig a Szerződő fél jogosult a Szerződés azonnali felmondására, díj-, költség- vagy egyéb fizetési kötelezettség nélkül.
+8. (1) A Szerződés alapján felszámított fix díjak, jutalékok és költségek – beleértve a százalékos mértékben meghatározott díjak jutalékok és költségek fix összegű minimum és maximum értékét is – a Központi Statisztikai Hivatal által, a Központi Statisztikai Hivatal honlapján közzétett előző évi éves fogyasztói árindex (infláció) alapján, annak mértékével, évente, a megelőző év december 31-i értékhez képest automatikusan módosulhatnak a honlapon történt közzététel napját követő hónap 30. napjától. A Szerződő fél ezt követően a módosult díjat, jutalékot és költséget köteles megfizetni a Bank részére. A díjak, jutalékok és költségek éves fogyasztói árindex változásával járó megváltozása nem minősül egyoldalú szerződésmódosításnak. A módosult díjak, jutalékok és költségek értékét a Bank – legkésőbb a Központi Statisztikai Hivatal honlapján történő közzétételt követő hónap 30. napjáig – a Kincstár honlapján megjelent Hirdetmény útján közli a Szerződő féllel.
+(2) A Szerződő félnek nyújtott szolgáltatás, ügylet, pénzügyi eszköz díjainak, költségének, a teljesítésben közreműködő harmadik személy általi megváltoztatása esetén a változás időpontjától módosulhatnak a Bank által felszámított díjak és költségek (pl. postaköltség).
+(3) Amennyiben a Nemzetközi Kártyaszervezet a Kártyabirtokost terhelő díjait, költségeit módosítja, a kártyatársasági díjstruktúra és a díjszabásra vonatkozó szabályok változnak, vagy új díjtétel kerül bevezetésre, a változást követően a Bank a módosított díjakkal, költségekkel jogosult a számlát megterhelni.
+(4) A Bank jogosult üzletpolitikai okokból az automatikus díj és költségváltozástól eltérően a Szerződő fél számára kedvezőbb díj- és költségtételeket alkalmazni.
+(5) A Bank a módosulásról a Szerződő Felet a Kincstár honlapján megjelent Hirdetmény útján értesíti.
+12. (1) A Bank a jogviszonnyal összefüggő valamennyi dokumentumot és tájékoztatást kizárólag a Szerződő félnek bocsátja rendelkezésre, a Kártyabirtokos(ok) folyamatos tájékoztatása a Szerződő fél kötelezettsége.
+(2) A Szerződő fél az Adatlapon általa meghatalmazott Kártyabirtokos(ok) magatartásáért a Bankkal és a Kincstárral szemben teljeskörű felelősséggel tartozik.
+(3) A Bank és a Kincstár nem részese a Szerződő fél és a Kártyabirtokos(ok), illetve a Kártyabirtokosok egymás közötti jogvitáinak.
+(4) A Kártyabirtokos(ok) érvényesen nem tehet(nek) olyan jognyilatkozatot, amely magára a Szerződésre, így különösen annak módosítására vagy megszüntetésére irányul.
+(5) A Kincstár nem felel a Bank által működtetett berendezések működésképtelenségéért, továbbá az elfogadó helyek általi nem jogszerű magatartásból eredő következményekért.
+21. (1) A Kártyafedezeti Tükörszámla feltöltése kizárólag keret-átvezetéssel történhet - melyet erre irányuló megbízással a Szerződő fél kezdeményezhet a Kincstári számlavezető helynél - , vagy elektronikus megbízás benyújtásával.
+(2) Keret-átvezetés során, a megbízás feldolgozását követően a Kincstár
+a) az átvezetendő összeggel megterheli a Kincstári Számlát, és
+b) az összeget a Kártyafedezeti Számlára vezeti át.
+(3) A Kincstár és a Bank adat- és elszámolás-forgalmi mechanizmusa alapján az átvezetett összeg, a Kártyafedezeti Számlán történő jóváírás időpontjától számított egy banki munkanapon belül jelenik meg a Kártyafedezeti Tükörszámlán.
+(4) A Kincstár meghatározza a keret-átvezetéssel összefüggő egyéb rendelkezéseket.
+25. (1) A Kártyához PIN kód tartozik, melyet a Szerződő fél és a Kártyabirtokos érdekében a Kártyabirtokoson kívül más személy nem ismer, és nem ismerhet.
+(2) A Kártyabirtokos köteles a PIN kódot titkosan kezelni, azt semmilyen körülmények között nem hozhatja más tudomására illetve nyilvánosságra.
+(3) A Kártyabirtokos köteles a Kártyát és a PIN kódot fokozott gondossággal megőrizni, és a PIN kód megőrzése vagy feljegyzése esetén azokat egymástól elkülönítetten tárolni. Ennek során köteles a Szerződés figyelembevételével a Kártyabirtokosoktól elvárható fokozott gondossággal eljárni.
+(4) A Kártyabirtokos az elektronikus fizetési eszközt a fizetési eszköz kibocsátására és használatának feltételeire vonatkozó szerződésben foglalt szabályoknak megfelelően használhatja. Köteles minden, az adott helyzetben általában elvárható intézkedést megtenni annak érdekében, hogy az elektronikus fizetési eszközt és a használatához szükséges egyéb eszközt - így a személyazonosító kódot (PIN kódot) vagy egyéb kódot - biztonságbantartsa.
+(5) A Kártyabirtokos személyazonosító kódját vagy az elektronikus fizetési eszköz használatához szükséges egyéb kódot nem jegyezheti fel, illetve nem rögzítheti az elektronikus fizetési eszközre, vagy bármely más, az elektronikus fizetési eszközzel együtt őrzött más tárgyra.
+(6) A Kártyabirtokos köteles az elektronikus fizetési eszköz használata során az adott helyzetben általában elvárható magatartást tanúsítani, így különösen köteles az ott meghatározott módon haladéktalanul bejelenteni, ha észlelte, hogy
+a) az elektronikus fizetési eszköz kikerült a birtokából,
+b) az elektronikus fizetési eszköz használatához szükséges személyazonosító, illetve egyéb kód, vagy más hasonló azonosító adata jogosulatlanul harmadik személy tudomására jutott,
+c) az elektronikus fizetési eszközzel felhatalmazás nélküli fizetési tranzakciót kezdeményeztek.
+26. (1) A kártyarendelés a budapesti, valamint a vidéki Kincstári számlavezető helyhez tartozó Szerződő fél esetében is az érvényes Adatlap(ok) alapján, a Szerződés hatályba lépését követően haladéktalanul megtörténik a Kincstár központjába telepített kincstári kártyarendszer segítségével.
+(2) A Bank a Kártyát éves díj felszámítása mellett, a Hirdetményben meghatározott időn belül bocsátja a Kártyabirtokos rendelkezésére.
+27. (1) A Kártyát és az ahhoz tartozó PIN kódot a Kincstár írásos értesítése alapján, átvételi elismervényen nyugtázva átveheti(k)
+a) személyesen a Kártyabirtokos(ok), illetve
+b) a Szerződő fél által írásban és az illetékes Kincstári számlavezető hely aláírása mellett erre a célra meghatalmazott természetes személy(ek).
+(2) A PIN borítékok és a kártyák átvétele az illetékes számlavezető Állampénztári Irodában történik. Az Állampénztári Irodák elérhetősége a www.allamkincstar.gov.hu oldalon megtalálható.
+(3) A meghatalmazottnak történő kiszolgáltatás esetén, az átvételi elismervény meghatalmazott(ak) általi aláírását követően a Kártyákkal és a PIN kódokkal összefüggő kárveszély teljes egészében a Szerződő félre száll.
+(4) A Kártyabirtokos a Kártya kézhezvételekor köteles az azon szereplő adatokat ellenőrizni, és az aláírási mezőt kézjegyével ellátni.

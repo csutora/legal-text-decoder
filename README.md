@@ -1,143 +1,232 @@
-# Deep Learning Class (VITMMA19) Project Work template
-
-[Complete the missing parts and delete the instruction parts before uploading.]
-
-## Submission Instructions
-
-[Delete this entire section after reading and following the instructions.]
-
-### Project Levels
-
-**Basic Level (for signature)**
-*   Containerization
-*   Data acquisition and analysis
-*   Data preparation
-*   Baseline (reference) model
-*   Model development
-*   Basic evaluation
-
-**Outstanding Level (aiming for +1 mark)**
-*   Containerization
-*   Data acquisition and analysis
-*   Data cleansing and preparation
-*   Defining evaluation criteria
-*   Baseline (reference) model
-*   Incremental model development
-*   Advanced evaluation
-*   ML as a service (backend) with GUI frontend
-*   Creative ideas, well-developed solutions, and exceptional performance can also earn an extra grade (+1 mark).
-
-### Data Preparation
-
-**Important:** You must provide a script (or at least a precise description) of how to convert the raw database into a format that can be processed by the scripts.
-* The scripts should ideally download the data from there or process it directly from the current sharepoint location.
-* Or if you do partly manual preparation, then it is recommended to upload the prepared data format to a shared folder and access from there.
-
-[Describe the data preparation process here]
-
-### Logging Requirements
-
-The training process must produce a log file that captures the following essential information for grading:
-
-1.  **Configuration**: Print the hyperparameters used (e.g., number of epochs, batch size, learning rate).
-2.  **Data Processing**: Confirm successful data loading and preprocessing steps.
-3.  **Model Architecture**: A summary of the model structure with the number of parameters (trainable and non-trainable).
-4.  **Training Progress**: Log the loss and accuracy (or other relevant metrics) for each epoch.
-5.  **Validation**: Log validation metrics at the end of each epoch or at specified intervals.
-6.  **Final Evaluation**: Result of the evaluation on the test set (e.g., final accuracy, MAE, F1-score, confusion matrix).
-
-The log file must be uploaded to `log/run.log` to the repository. The logs must be easy to understand and self explanatory. 
-Ensure that `src/utils.py` is used to configure the logger so that output is directed to stdout (which Docker captures).
-
-### Submission Checklist
-
-Before submitting your project, ensure you have completed the following steps.
-**Please note that the submission can only be accepted if these minimum requirements are met.**
-
-- [ ] **Project Information**: Filled out the "Project Information" section (Topic, Name, Extra Credit).
-- [ ] **Solution Description**: Provided a clear description of your solution, model, and methodology.
-- [ ] **Extra Credit**: If aiming for +1 mark, filled out the justification section.
-- [ ] **Data Preparation**: Included a script or precise description for data preparation.
-- [ ] **Dependencies**: Updated `requirements.txt` with all necessary packages and specific versions.
-- [ ] **Configuration**: Used `src/config.py` for hyperparameters and paths, contains at least the number of epochs configuration variable.
-- [ ] **Logging**:
-    - [ ] Log uploaded to `log/run.log`
-    - [ ] Log contains: Hyperparameters, Data preparation and loading confirmation, Model architecture, Training metrics (loss/acc per epoch), Validation metrics, Final evaluation results, Inference results.
-- [ ] **Docker**:
-    - [ ] `Dockerfile` is adapted to your project needs.
-    - [ ] Image builds successfully (`docker build -t dl-project .`).
-    - [ ] Container runs successfully with data mounted (`docker run ...`).
-    - [ ] The container executes the full pipeline (preprocessing, training, evaluation).
-- [ ] **Cleanup**:
-    - [ ] Removed unused files.
-    - [ ] **Deleted this "Submission Instructions" section from the README.**
+# Legal Text Decoder
 
 ## Project Details
 
 ### Project Information
 
-- **Selected Topic**: [Enter Topic Name Here, options: AnkleAlign, Legal Text Decoder, Bull-flag detector, End-of-trip delay prediction]
-- **Student Name**: [Enter Your Name Here]
-- **Aiming for +1 Mark**: [Yes/No]
+- **Selected Topic**: Legal Text Decoder
+- **Student Name**: Márton Csutora
+- **Aiming for +1 Mark**: Yes
 
 ### Solution Description
 
-[Provide a short textual description of the solution here. Explain the problem, the model architecture chosen, the training methodology, and the results.]
+This project implements a **Legal Text Decoder** - a system that analyzes Hungarian legal texts (ÁSZF - Általános Szerződési Feltételek / General Terms and Conditions) and predicts their understandability on a scale of 1-5:
+
+| Score | Hungarian | English |
+|-------|-----------|---------|
+| 1 | Nagyon nehezen érthető | Very hard to understand |
+| 2 | Nehezen érthető | Hard to understand |
+| 3 | Többé/kevésbé megértem | Somewhat understandable |
+| 4 | Érthető | Understandable |
+| 5 | Könnyen érthető | Easy to understand |
+
+#### Model Architecture
+
+The solution uses a **fine-tuned Hungarian BERT model (HuBERT)** for text classification:
+
+- **Base Model**: `SZTAKI-HLT/hubert-base-cc` - A Hungarian BERT model pretrained on a large Hungarian corpus
+- **Architecture**: BERT encoder + Classification head (768 → 5 classes)
+- **Loss Function**: **Ordinal Cross-Entropy** - A custom loss that treats labels as ordinal, penalizing distant misclassifications more than adjacent ones (e.g., predicting 2 when true is 4 is worse than predicting 3 when true is 4)
+- **Class Weighting**: Balanced class weights to handle label imbalance
+
+#### Training Methodology
+
+1. **Data Preprocessing**: Aggregated 3,397 labeled samples from 33 JSON files (Label Studio exports) from 25 different annotators
+2. **Stratified Split**: 80% train / 10% validation / 10% test with stratification by label
+3. **Training**: Fine-tuning with AdamW optimizer, linear warmup scheduler, early stopping (patience=5)
+4. **Evaluation**: Accuracy, Macro F1, MAE, Cohen's Kappa (quadratic weighted)
+
+#### Results Summary
+
+| Model | Accuracy | Macro F1 | MAE |
+|-------|----------|----------|-----|
+| Baseline (TF-IDF + LogReg) | 0.36 | 0.30 | 0.97 |
+| HuBERT + Ordinal Loss | TBD | TBD | TBD |
 
 ### Extra Credit Justification
 
-[If you selected "Yes" for Aiming for +1 Mark, describe here which specific part of your work (e.g., innovative model architecture, extensive experimentation, exceptional performance) you believe deserves an extra mark.]
+This project qualifies for the +1 mark based on:
+
+1. **Complete Pipeline**: Full implementation from data preprocessing to web deployment
+2. **Advanced Loss Function**: Custom ordinal cross-entropy loss that respects the ordinal nature of understandability ratings
+3. **ML as a Service**: Gradio-based web interface for interactive text analysis
+4. **Comprehensive Evaluation**: Multiple metrics including Cohen's Kappa for ordinal agreement
+5. **Multi-source Data Handling**: Robust parsing of Label Studio exports from multiple annotators with varying formats
+
+### Data Preparation
+
+The data is collected from Hungarian legal documents (ÁSZF) labeled by multiple students using Label Studio. The data files are located in the `data/` directory, with each student's contributions in separate folders.
+
+**Data Format**: Label Studio JSON export with the following structure:
+```json
+{
+  "data": {"text": "Legal text paragraph..."},
+  "annotations": [{
+    "result": [{
+      "value": {"choices": ["4-Érthető"]},
+      "type": "choices"
+    }]
+  }]
+}
+```
+
+The preprocessing script (`src/01-data-preprocessing.py`) handles:
+- Parsing multiple JSON formats from different annotators
+- Extracting text and labels (Hungarian label strings → integers 1-5)
+- Removing cancelled annotations and duplicates
+- Stratified train/val/test splitting
 
 ### Docker Instructions
 
-This project is containerized using Docker. Follow the instructions below to build and run the solution.
-[Adjust the commands that show how do build your container and run it with log output.]
+This project is containerized using Docker with GPU support.
 
 #### Build
 
-Run the following command in the root directory of the repository to build the Docker image:
-
 ```bash
-docker build -t dl-project .
+# CPU version
+docker build -t legal-text-decoder .
+
+# GPU version (requires NVIDIA Docker runtime)
+docker build --target gpu -t legal-text-decoder:gpu .
 ```
 
-#### Run
-
-To run the solution, use the following command. You must mount your local data directory to `/app/data` inside the container.
-
-**To capture the logs for submission (required), redirect the output to a file:**
+#### Run Full Pipeline
 
 ```bash
-docker run -v /absolute/path/to/your/local/data:/app/data dl-project > log/run.log 2>&1
+# Run with data mounted, capture logs (CPU version)
+docker run -v $(pwd)/data:/app/data -v $(pwd)/models:/app/models legal-text-decoder > log/run.log 2>&1
+
+# GPU version (requires NVIDIA Container Toolkit)
+docker run --gpus all -v $(pwd)/data:/app/data -v $(pwd)/models:/app/models legal-text-decoder:gpu > log/run.log 2>&1
 ```
 
-*   Replace `/absolute/path/to/your/local/data` with the actual path to your dataset on your host machine that meets the [Data preparation requirements](#data-preparation).
-*   The `> log/run.log 2>&1` part ensures that all output (standard output and errors) is saved to `log/run.log`.
-*   The container is configured to run every step (data preprocessing, training, evaluation, inference).
+> **Note**: For GPU support in Docker, you need the [NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html) installed. Alternatively, run training directly on your host machine (see [Local Development](#local-development)).
 
+#### Run Gradio Web Interface
+
+```bash
+# Start the web interface on port 7860
+docker run -p 7860:7860 -v $(pwd)/data:/app/data -v $(pwd)/models:/app/models \
+    legal-text-decoder python src/app.py
+```
+
+Then open http://localhost:7860 in your browser.
+
+#### Run Individual Scripts
+
+```bash
+# Data preprocessing only
+docker run -v $(pwd)/data:/app/data legal-text-decoder python src/01-data-preprocessing.py
+
+# Training only
+docker run -v $(pwd)/data:/app/data -v $(pwd)/models:/app/models \
+    legal-text-decoder python src/02-training.py
+
+# Evaluation only
+docker run -v $(pwd)/data:/app/data -v $(pwd)/models:/app/models \
+    legal-text-decoder python src/03-evaluation.py
+
+# Inference on examples
+docker run -v $(pwd)/models:/app/models legal-text-decoder python src/04-inference.py
+```
 
 ### File Structure and Functions
 
-[Update according to the final file structure.]
+```
+legal-text-decoder/
+├── src/
+│   ├── 01-data-preprocessing.py  # Data loading, cleaning, and splitting
+│   ├── 02-training.py            # Model training with ordinal loss
+│   ├── 03-evaluation.py          # Comprehensive model evaluation
+│   ├── 04-inference.py           # Inference on new texts
+│   ├── app.py                    # Gradio web application
+│   ├── baseline.py               # TF-IDF + LogReg baseline model
+│   ├── config.py                 # Hyperparameters and paths
+│   ├── dataset.py                # PyTorch Dataset class
+│   ├── model.py                  # HuBERT classifier + ordinal loss
+│   └── utils.py                  # Logging utilities
+│
+├── notebook/
+│   ├── 01-data-exploration.ipynb # EDA and visualization
+│   └── 02-label-analysis.ipynb   # Label distribution analysis
+│
+├── data/
+│   ├── <student_id>/             # Raw Label Studio exports
+│   └── processed/                # Preprocessed train/val/test splits
+│       ├── train.json
+│       ├── val.json
+│       ├── test.json
+│       └── all_data.json
+│
+├── models/
+│   ├── best_model.pth            # Best trained model checkpoint
+│   ├── baseline_model.joblib     # Baseline model
+│   └── training_history.json     # Training metrics history
+│
+├── log/
+│   └── run.log                   # Pipeline execution log
+│
+├── Dockerfile                    # Container configuration
+├── requirements.txt              # Python dependencies
+├── run.sh                        # Full pipeline script
+├── PLAN.md                       # Implementation plan
+└── README.md                     # This file
+```
 
-The repository is structured as follows:
+### Configuration
 
-- **`src/`**: Contains the source code for the machine learning pipeline.
-    - `01-data-preprocessing.py`: Scripts for loading, cleaning, and preprocessing the raw data.
-    - `02-training.py`: The main script for defining the model and executing the training loop.
-    - `03-evaluation.py`: Scripts for evaluating the trained model on test data and generating metrics.
-    - `04-inference.py`: Script for running the model on new, unseen data to generate predictions.
-    - `config.py`: Configuration file containing hyperparameters (e.g., epochs) and paths.
-    - `utils.py`: Helper functions and utilities used across different scripts.
+Key hyperparameters in `src/config.py`:
 
-- **`notebook/`**: Contains Jupyter notebooks for analysis and experimentation.
-    - `01-data-exploration.ipynb`: Notebook for initial exploratory data analysis (EDA) and visualization.
-    - `02-label-analysis.ipynb`: Notebook for analyzing the distribution and properties of the target labels.
+| Parameter | Value | Description |
+|-----------|-------|-------------|
+| MODEL_NAME | SZTAKI-HLT/hubert-base-cc | Hungarian BERT model |
+| NUM_LABELS | 5 | Understandability classes |
+| MAX_LENGTH | 512 | Max token sequence length |
+| BATCH_SIZE | 16 | Training batch size |
+| LEARNING_RATE | 2e-5 | AdamW learning rate |
+| EPOCHS | 20 | Maximum training epochs |
+| EARLY_STOPPING_PATIENCE | 5 | Early stopping patience |
+| LOSS_TYPE | ordinal_cross_entropy | Loss function type |
 
-- **`log/`**: Contains log files.
-    - `run.log`: Example log file showing the output of a successful training run.
+### Requirements
 
-- **Root Directory**:
-    - `Dockerfile`: Configuration file for building the Docker image with the necessary environment and dependencies.
-    - `requirements.txt`: List of Python dependencies required for the project.
-    - `README.md`: Project documentation and instructions.
+- Python 3.10+
+- PyTorch 2.3+
+- Transformers 4.40+
+- CUDA 12.1+ (for GPU training)
+- See `requirements.txt` for full dependencies
+
+### Local Development
+
+#### Setup
+
+```bash
+# Create virtual environment
+python3 -m venv venv
+source venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+#### Running the Pipeline
+
+```bash
+# Run full pipeline
+bash run.sh
+
+# Or run individual scripts:
+python src/01-data-preprocessing.py  # Data preprocessing
+python src/baseline.py               # Baseline model
+python src/02-training.py            # Train HuBERT model
+python src/03-evaluation.py          # Evaluate model
+python src/04-inference.py           # Run inference examples
+python src/app.py                    # Start Gradio web interface
+```
+
+#### Running the Web Interface
+
+```bash
+python src/app.py
+# Open http://localhost:7860 in your browser
+```

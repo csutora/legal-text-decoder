@@ -1,0 +1,47 @@
+1.2. A jelen ÁSZF tartalmazza a Magyar Állami Operaház (a továbbiakban: MÁO), mint szolgáltató, játszóhelyein bemutatásra kerülő előadásokra érvényes jegyek és bérletek értékesítésére, valamint a jegyek és bérletek felhasználására, a MÁO szolgáltatásainak igénybevételére, illetve a felek között létrejövő jogviszonnyal kapcsolatos jogokra és kötelezettségekre vonatkozó általános szerződési feltételeket.
+
+1.3. A jelen ÁSZF hatálya kiterjed a MÁO által értékesített valamennyi jegyre és bérletre. Az értékesítésre vonatkozó rendelkezések nem vonatkoznak azokra az esetekre, amikor a Vevő értékesítésre vonatkozó szerződés alapján harmadik féltől vásárol jegyet vagy bérletet. Ilyen esetben a megvásárolt jegyekre és bérletekre a harmadik fél eladó által meghatározott feltételek az irányadók.
+
+1.4. A jelen ÁSZF kiterjed a MÁO által bemutatott előadásokkal kapcsolatos valamennyi, a MÁO által nyújtott szolgáltatásra, és kiterjed a Látogatóra vonatkozó magatartási szabályokra.
+
+1.5. A jelen ÁSZF rendelkezéseit a Vevő, illetve a Látogató a jegy vagy bérlet megvásárlásával vagy felhasználásával magára nézve kötelezőnek fogad el.
+
+1.6. Annak érdekében, hogy a Vevő és a Látogató a jelen ÁSZF rendelkezéseit egyszerűen megismerhessék, a jelen ÁSZF-et a saját honlapján elektronikusan és jegypénztáraiban nyomtatott formában bárki számára hozzáférhető módon közzéteszi. Az internetes elérhetőség a nyomtatott jegyen és bérleten feltüntetésre kerül.
+
+3.1. A MÁO által az értékesítési helyeken vásárlásra felkínált jegyek és bérletek, melyek tulajdonságai és jellemzői a jegyen vagy bérleten olvashatók, továbbá a megvásárlásuk és felhasználásuk általános feltételei az ÁSZF-ben találhatók.
+
+3.2. A megvásárolt jegy vagy bérlet nem személyhez kötött, azok átruházhatók. A jegy vagy bérlet felhasználásával a Látogató jogosult az előadást megtekinteni, a MÁO szolgáltatásait igénybe venni, egyben köteles a jelen ÁSZF rendelkezéseit betartani.
+
+3.3. Az előadás, mint szolgáltatás megfelelő minőségű nyújtására az adott előadás szervezője köteles. Ha a szervező személye a MÁO-tól eltérő, úgy az a jegyen vagy bérleten kerül feltüntetésre. Ebben az esetben a MÁO nem tartozik felelősséggel az előadás minőségéért, lebonyolításáért, megvalósulásáért, elmaradásáért, valamint az előadáson fellépő művészek vagy más előadók szerepléséért.
+
+4.1. A Vevő az előadásokra a MÁO állandó vagy eseti értékesítési helyein – Opera Értékesítési Centrum, jegypénztárak, egyéb értékesítési helyek –, illetve a MÁO honlapján vásárolhat jegyet vagy bérletet.
+
+4.2. A jegyek és bérletek vásárlására és a szolgáltatás igénybevételére megkötött szerződés nem minősül írásbeli szerződésnek, iktatásra nem kerül, így utólag nem hozzáférhető. A szerződés létrejöttét az elektronikusan elmentett vásárlási adatok igazolják, amelyeket a MÁO a számvitelre és az adózás rendjére vonatkozó jogszabályokban meghatározott ideig őriz. A felek között létrejövő szerződés nyelve a magyar.
+
+4.3.3. A MÁO a vásárlás során megadott adatok elektronikus rögzítése során felmerült hibák azonosítását és kijavítását az alábbi eszközök útján biztosítja a Vevők részére. Bérletújítás esetén a bejelentkezési felület automatikus visszajelzést ad a Vevő részére, ha a megadott e-mail cím vagy vevőazonosító nem megfelelő. A vásárláshoz szükséges, azonban ki nem töltött adatsorokról a rendszer automatikus visszajelzést ad a Vevő részére. Ha a vásárlás során a Vevő valamely adatot helytelenül rögzített, a hiba kijavítása érdekében a „Vissza” gomb megnyomásával térhet vissza a korábbi felületre.
+
+4.3.4. A Vevő a „Fizetés” gomb megnyomásával fogadja el a jelen ÁSZF vásárlásra vonatkozó feltételeit, illetve az Interticket, mint a számítógépes jegyértékesítési rendszer szolgáltatójának általános szerződéses feltételeit.
+
+4.4. A jegy vagy bérlet megvásárlásával a Vevő kijelenti, hogy a jelen ÁSZF-ben foglalt feltételeket megismerte és magára nézve kötelezőnek fogadta el, továbbá az általa megadott személyes adatok kezeléséhez a jelen ÁSZF-ben és a MÁO adatkezelési szabályzatában meghatározott körben hozzájárul.
+
+5.1. A vételár a jegyeken és bérleteken, valamint az ezekre vonatkozó közleményeken feltüntetett ár, amely tartalmazza a hatályos jogszabályokban megjelölt mértékű általános forgalmi adót is. A MÁO minden évadban közzéteszi a játszóhelyeire vonatkozó jegy-és bérletárakat, melyet jogosult egyoldalúan módosítani.
+
+5.2. A Vevő az aktuális jegy- és bérletárakról a MÁO honlapján és az értékesítési helyeken tájékozódhat. A MÁO meghatározott időközönként kedvezményeket hirdet, amelyek részletes szabályairól a honlapján, hírlevélben és értékesítési helyein ad tájékoztatást.
+
+5.3.1. Az Opera Értékesítési Centrumában és jegypénztáraiban történő vásárlás esetén a vételár kiegyenlítése kézpénzzel, utalvánnyal vagy bankkártyával történhet a Vevő választása szerint. A Vevő a vételár maradéktalan kiegyenlítését követően nyomtatott jegyet vagy bérletet kap, amelyet ő vagy a Látogató a jelen ÁSZF szabályai szerint jogosult felhasználni, a MÁO szolgáltatásait igénybe venni.
+
+5.3.2. A honlapon történő vásárlás esetén a vételár kiegyenlítése a vásárlás végén az erre kijelölt fizetési felületen bankkártyával vagy Opera Ajándékutalvánnyal (további információ: www.opera.hu) történhet. A Vevő a vételár maradéktalan kiegyenlítését követően a sikeres vásárlásról a fizetési felületen megadott e-mail címre visszaigazolást kap. Amennyiben a visszaigazolás a Vevő megrendelésének elküldésétől számított legkésőbb 48 órán belül a Vevőhöz nem érkezik meg, a Vevő mentesül az ajánlati kötöttség vagy szerződéses kötelezettség alól. A visszaigazolással egyidejűleg a MÁO jegyvásárlás esetén ún. e-ticketet, bérletvásárlás esetén vouchert küld a Vevő részére, az általa a fizetési felületen megadott e-mail címre. Vevő a vouchert köteles kinyomtatni és a felhasználást megelőzően bérletkártyára váltani az Opera Értékesítési Centrumban vagy a MÁO jegypénztárakban. Elektronikus formátumú vouchert a MÁO-nak nem áll módjában elfogadni. A bérletkártyát, illetve az e-ticket formátumban kiadott jegyet Vevő a jelen ÁSZF szabályai szerint jogosult felhasználni.
+
+6.2. Az előadás megtekintéséhez a Látogatónak az előadás kezdetét megelőzően a megtekinteni kívánt előadásra érvényes jeggyel vagy bérlettel kell rendelkeznie. A Látogató a jegyét vagy bérletét köteles a jegy érvényességének megvizsgálása céljából az erre feljogosított személynek belépéskor bemutatni.
+
+6.3. Az érvényes jeggyel rendelkező Látogató jogosult az adott előadás játszóhelyén tartózkodni, a kiszolgáló létesítményeket, berendezéseket használni, az előadáshoz kapcsolódó szolgáltatásokat igénybe venni. A MÁO egyes szolgáltatások igénybevételét jogosult díjazáshoz kötni.
+
+6.4. A Látogató a jegyén feltüntetett sor és székszámnak megfelelő helyen köteles helyet foglalni. A jegynek megfelelő ülőhely elfoglalásában ültetők segítik a Látogatók eligazodását.
+
+6.5. A MÁO fenntartja magának a jogot arra, hogy technikai, biztonsági, művészi, vagy egyéb, előre nem látott körülmény miatt meghatározott nézőtéri helyeket a jegy vagy bérlet megvásárlását követően a Látogatók elől elzárjon. Ebben az esetben a MÁO az érintett Vevőnek - amennyiben vásárláskor elérhetőséget megadtak - értesítést küld, és a lehetőségekhez képest minden tőle telhetőt megtesz annak érdekében, hogy az érintett Látogatók a kiesett helyekkel egyenértékű helyről tekinthessék meg az előadást, vagy a jegyár visszatérítésével vagy más módon kompenzálja a Vevőt.
+
+9.2. Amennyiben a szerződésszerű teljesítés a MÁO ellenőrzési körén kívül eső, a szerződéskötés időpontjában előre nem látható körülmény miatt marad el (pld. az előadás félbeszakad), és nem volt elvárható, hogy az adott körülményt elkerülje vagy elhárítsa (vis maior), úgy a szerződésszerű teljesítés elmaradásáért a MÁO nem felel, és a szerződés megszűnik. Vis maiornak minősül különösen, de nem kizárólagosan a háború, lázadás, zavargás, járvány, terrorcselekmény, sztrájk, baleset, tűzvész, árvíz, súlyon energiaellátási zavar vagy más olyan, előre nem látható és elháríthatatlan akadály, amely a MÁO hatókörén kívül esik, és emiatt nem képes valamely kötelezettségét, szolgáltatását szerződésszerűen teljesíteni. Ebben az esetben a MÁO a jegye és bérletek árát nem köteles visszatéríteni.
+
+9.3. Ha annak megkezdése előtt az előadás vis maior miatt lemondásra kerül és elmarad, úgy a teljesítés lehetetlenné válása okán a szerződés megszűnik. Az előadás ilyen módon történő elmaradása esetén a MÁO, a Vevő választása szerint, a megvásárolt jegy vételárát visszatéríti vagy más előadásra becseréli. A MÁO minden tőle elvárhatót megtesz annak érdekében, hogy az előadás esetleges elmaradása esetén a Vevőt, illetve a Látogatót tájékoztassa és a jegyek visszaváltását vagy becserélését elősegítse. A MÁO közzéteszi a www.opera.hu honlapján a jegyvisszaváltásra vagy cseréjére vonatkozó információkat. A visszaváltásra vagy cserére a MÁO által megadott időben, a meghirdetéstől számított 30 napos jogvesztő határidőn belül, az eredeti jegy és a vásárlást igazoló bizonylat felmutatása mellett van lehetőség. A visszaváltás a jegy teljes árán történik, a jegy árán felül a MÁO semmilyen további költség vagy kár megtérítésére nem köteles.
+
+

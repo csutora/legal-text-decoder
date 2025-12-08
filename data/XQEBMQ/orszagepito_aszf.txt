@@ -1,0 +1,64 @@
+A vásárolandó áruk lényeges tulajdonságait, jellemzőit, az áruk használatára vonatkozó utasításokat a konkrét árucikk információs oldaláról lehet megismerni azzal, hogy az áru részletes tényleges tulajdonságait a termékhez mellékelésre kerülő használati utasítás tartalmazza. A Szolgáltató szerződésszerű teljesítésének minősül, ha a termék a weboldalon vagy a használati utasításban nyújtott tájékoztatásnál kedvezőbb, előnyösebb tulajdonságokkal rendelkezik. Ha a vásárlás előtt az áruval kapcsolatban kérdése merülne fel, ügyfélszolgálatunk készséggel áll rendelkezésére. Amennyiben a Weboldalon található bármely áru minőségével, alapvető tulajdonságával, használatával, használhatóságával kapcsolatban, a weboldalon közölteknél több információra van szüksége, kérjük, forduljon ügyfélszolgálatunkhoz, melynek adatait, elérhetőségét a szerződés elején talál.
+
+A vételár mindig a kiválasztott termék mellett feltüntetett összeg, bruttó, 27% áfát tartalmazó ár.
+
+A Weboldalról megrendelhető termékek árai változtatásának jogát a Szolgáltató fenntartja azzal, hogy a módosítás a Weboldalon való megjelenéssel egyidejűleg lép hatályba. A módosítás a már megrendelt termékek vételárát kedvezőtlenül nem befolyásolja.
+
+Amennyiben a Szolgáltató minden gondossága ellenére hibás ár kerül a Weboldal felületére, különös tekintettel a nyilvánvalóan téves, pl. a termék közismert, általánosan elfogadott vagy becsült árától jelentősen eltérő, esetleg rendszerhiba miatt megjelenő “0” Ft-os vagy “1” Ft-os árra, akkor a Szolgáltató nem köteles a terméket hibás áron szállítani, hanem felajánlhatja a helyes áron történő szállítást, amelynek ismeretében az Ügyfél elállhat vásárlási szándékától.
+
+A megrendelést a Szolgáltató Weboldalán keresztül nem csak regisztrált Ügyféltől fogadja el, azonban a megrendeléshez minden, az Ügyfél adataira vonatkozó mező maradéktalan kitöltése szükséges. (Ha az Ügyfél valamely mezőt hibásan vagy hiányosan tölt ki, hibaüzenetet kap a Szolgáltatótól.) A Szolgáltatót az Ügyfél által tévesen és/vagy pontatlanul megadott rendelési adatokra visszavezethető szállítási késedelemért, illetve egyéb problémáért, hibáért semminemű felelősség nem terheli.
+
+Az Ügyfélnek a rendelés bármely szakaszában és a megrendelés Szolgáltató részére való elküldéséig a Webáruházban bármikor lehetősége van az adatbeviteli hibák javítására a megrendelési felületen (pl. termék törlése a kosárból az „X” ikonra kattintva).
+
+Az Ügyfél által elküldött ajánlat (megrendelés) megérkezését a Szolgáltató késedelem nélkül, automatikus visszaigazoló e-mail útján legkésőbb 48 órán belül visszaigazolja az Ügyfél részére, mely visszaigazoló e-mail tartalmazza az Ügyfél által a vásárlás, vagy a rendelés során megadott adatokat (pl. számlázási és szállítási információk), a rendelés azonosítóját, a rendelés dátumát, a megrendelt termékhez tartozó elemek felsorolását, mennyiségét, a termék árát, szállítási költséget és a fizetendő végösszeget. Ez a visszaigazoló email kizárólag tájékoztatja az Ügyfelet arról, hogy a megrendelése a Szolgáltatóhoz megérkezett.
+
+Az Ügyfél mentesül az ajánlati kötöttség alól, ha késedelem nélkül, vagyis 48 órán belül nem kapja meg Szolgáltatótól az elküldött rendelésére vonatkozó külön elfogadó e-mailt.
+
+Ha az Ügyfél rendelését már elküldte a Szolgáltató részére és hibát vesz észre a visszaigazoló e-mailben szereplő adatok tekintetében, azt 1 napon belül jeleznie kell a Szolgáltató felé.
+
+A megrendelés elektronikus úton megkötött szerződésnek minősül, amelyre a polgári törvénykönyvről szóló 2013. évi V. törvény, az elektronikus kereskedelmi szolgáltatások, valamint az információs társadalommal összefüggő szolgáltatások egyes kérdéseiről szóló 2001. évi CVIII. törvényben foglaltak irányadóak. A szerződés a fogyasztó és a vállalkozás közötti szerződések részletes szabályairól szóló 45/2014 (II.26.) Korm. rendelet hatálya alá tartozik, és szem előtt tartja a fogyasztók jogairól szóló Európai Parlament és a Tanács 2011/83/EU irányelvének rendelkezéseit.
+
+Ha a Fogyasztó elállási jogával élni kíván, elállási szándékát tartalmazó egyértelmű nyilatkozatát köteles eljuttatni (például postán, telefaxon vagy elektronikus úton küldött levél útján) a jelen ÁSZF elején feltüntetett elérhetőségek igénybevételével a Szolgáltató részére. Fogyasztó határidőben gyakorolja elállási jogát, ha a fent megjelölt határidő lejárta előtt elküldi elállási nyilatkozatát a Szolgáltató részére.
+A Fogyasztót terheli annak bizonyítása, hogy elállási jogát a 6. pontban meghatározott rendelkezéseknek megfelelően gyakorolta.
+
+Mindkét esetben a Szolgáltató emailben haladéktalanul visszaigazolja a Fogyasztó elállási nyilatkozatának megérkezését.
+
+Írásban történő elállás esetén azt határidőben érvényesítettnek kell tekinteni, ha Fogyasztó az erre irányuló nyilatkozatát 14 naptári napon belül (akár a 14. naptári napon) elküldi a Szolgáltatónak.
+
+Postai úton történő jelzés alkalmával a postára adás dátumát, e-mail vagy telefaxon keresztül történő értesítés esetén az e-mail, illetve a fax küldésének idejét veszi figyelembe a Szolgáltató a határidő számítás szempontjából. A Fogyasztó levelét ajánlott küldeményként adja postára, hogy hitelt érdemlően bizonyítható legyen a feladás dátuma.
+
+Fogyasztó elállás esetén köteles a megrendelt terméket indokolatlan késedelem nélkül a Szolgáltató részére visszajuttatni, de legkésőbb elállási nyilatkozatának közlésétől számított 14 napon belül visszaküldeni.
+
+A határidő betartottnak minősül, ha Fogyasztó a 14 napos határidő letelte előtt elküldi (postára adja vagy az általa megrendelt futárnak átadja) a terméket.
+
+A termék Szolgáltató címére történő visszaküldésének költsége Fogyasztót terheli, kivéve ha a Szolgáltató vállalta e költségek viselését. A Fogyasztó kérésére Szolgáltató gondoskodik a visszaszállítás megszervezéséről, azonban a Szolgáltató által megszervezett visszaszállítás költsége a Fogyasztót terheli, a Szolgáltató ez esetben az általa megszervezett visszaszállítás költségét nem vállalja át a Fogyasztótól, kizárólag segítséget nyújt abban, hogy a Fogyasztónak a visszaszállítás megszervezésével ne kelljen foglalkoznia. Fogyasztó erre irányuló igényét Szolgáltató ügyfélszolgálata fogadja.
+
+A Szolgáltatónak az utánvéttel visszaküldött csomagot nem áll módjában átvenni. A termék visszaküldésének költségének kívül az elállás kapcsán a Fogyasztót semmilyen más költség nem terheli.
+
+Ha Fogyasztó eláll a szerződéstől, haladéktalanul, de legkésőbb a Fogyasztó elállási nyilatkozatának kézhezvételétől számított 14 napon belül a Szolgáltató visszatéríti a Fogyasztó által teljesített valamennyi ellenszolgáltatást, ideértve a fuvarozási (kiszállításért fizetett) költséget is, kivéve azokat a többletköltségeket, amelyek amiatt merültek fel, hogy Fogyasztó a Szolgáltató által felkínált, legolcsóbb szokásos fuvarozási módtól eltérő fuvarozási módot választott. A Szolgáltató jogosult a visszatérítést mindaddig visszatartani, amíg vissza nem kapta a terméket, vagy Fogyasztó nem igazolta hitelt érdemlően, hogy azt visszaküldte: a kettő közül a Szolgáltató a korábbi időpontot veszi figyelembe.
+
+A visszatérítés során az eredeti ügylet során alkalmazott fizetési móddal egyező fizetési módot alkalmaz a Szolgáltató, kivéve, ha Fogyasztó más fizetési mód igénybevételéhez kifejezetten a hozzájárulását adja; e visszatérítési mód alkalmazásából kifolyólag Fogyasztót semmilyen többletköltség nem terheli.
+
+Fogyasztó kizárólag akkor vonható felelősségre a termékben bekövetkezett értékcsökkenésért, ha az a termék jellegének, tulajdonságainak megállapításához szükséges használatot meghaladó használat miatt következett be.
+
+Ha Fogyasztó a szolgáltatásnyújtásra irányuló szerződés esetén a teljesítés megkezdését megkötését követően gyakorolja felmondási jogát, úgy az elszámolás során köteles megtéríteni a Szolgáltató ésszerű költségeit.
+
+A Szolgáltatót termékeire vonatkozóan a Polgári törvénykönyv és a 151/2003. (IX. 22.) Korm. rendelet alapján jótállási kötelezettség terheli, amely azt jelenti, hogy a jótállás időtartama alatt a felelősség alól csak akkor mentesül, ha bizonyítja, hogy a hiba a termék nem rendeltetésszerű használatára vezethető vissza.
+
+A jótállás időtartama (a jótállási idő) a tényleges teljesítéssel, tehát a terméknek az Ügyfél részére történő átadásával, vagy ha az üzembe helyezést a Szolgáltató vagy annak megbízottja végzi, az üzembe helyezés napja. Tartós fogyasztási cikknek minősülnek az egyes tartós fogyasztási cikkekre vonatkozó kötelező jótállásról szóló 151/2003. (IX.22.) Kormányrendelet mellékletében felsorolt termékek, melyekre a jogszabály egy éves kötelező jótállási időtartalmat ír elő. A rendelet (tárgyi) hatálya csakis az új, Magyarország területén kötött fogyasztói szerződés keretében értékesített és a rendelet mellékletében felsorolt termékekre vonatkozik.
+
+Szakszerűtlen üzembe helyezés (kivéve, ha az üzembe helyezést a Szolgáltató, vagy annak megbízottja végezte el, illetve ha a szakszerűtlen üzembe helyezés a használati-kezelési útmutató hibájára vezethető vissza) rendeltetésellenes használat, a használati-kezelési útmutatóban foglaltak figyelmen kívül hagyása, – helytelen tárolás, helytelen kezelés, rongálás,elemi kár, természeti csapás okozta.
+
+A Szolgáltató követelheti a termék jellegének, tulajdonságainak és működésének megállapításához szükséges használatot meghaladó használatból eredő értékcsökkenés, illetve ésszerű költségeinek – ha szolgáltatásnyújtásra irányuló szerződés teljesítését a Fogyasztó kifejezett kérésére a határidő lejárta előtt megkezdte és gyakorolja felmondási jogát – megtérítését.
+
+Az Ügyfél a Szolgáltató hibás teljesítése esetén a Szolgáltatóval szemben kellékszavatossági igényt érvényesíthet. Fogyasztói szerződés esetén az Ügyfél az átvétel időpontjától számított 2 éves elévülési határidő alatt érvényesítheti szavatossági igényeit, azokért a termékhibákért, amelyek a termék átadása időpontjában már léteztek. Két éves elévülési határidőn túl kellékszavatossági jogait az Ügyfél érvényesíteni már nem tudja.
+
+Nem fogyasztóval kötött szerződés esetén a jogosult az átvétel időpontjától számított 1 éves elévülési határidő alatt érvényesítheti szavatossági igényeit.
+
+Az Ügyfél – választása szerint – kérhet kijavítást vagy kicserélést, kivéve, ha az ezek közül az Ügyfél által választott igény teljesítése lehetetlen vagy a Szolgáltató számára más igénye teljesítéséhez képest aránytalan többletköltséggel járna. Ha a kijavítást vagy a kicserélést az Ügyfél nem kérte, illetve nem kérhette, úgy igényelheti az ellenszolgáltatás arányos leszállítását vagy a hibát a Szolgáltató költségére az Ügyfél is kijavíthatja, illetve mással kijavíttathatja vagy – végső esetben – a szerződéstől is elállhat. Jelentéktelen hiba miatt elállásnak nincs helye.
+
+Az Ügyfél a választott kellékszavatossági jogáról egy másikra is áttérhet, az áttérés költségét azonban köteles viselni, kivéve, ha az indokolt volt, vagy arra a Szolgáltató adott okot.
+
+Az Ügyfél köteles a hibát annak felfedezése után haladéktalanul, de nem később, mint a hiba felfedezésétől számított kettő hónapon belül közölni a Szolgáltatóval.
+
+Az Ügyfél közvetlenül a Szolgáltatóval szemben érvényesítheti kellékszavatossági igényét.
