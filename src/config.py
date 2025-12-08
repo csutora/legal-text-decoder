@@ -1,11 +1,57 @@
-# Configuration settings as an example
+# Configuration settings for the Legal Text Decoder project
 
-# Training hyperparameters
-EPOCHS = 1000
-EARLY_STOPPING_PATIENCE = 10
-BATCH_SIZE = 32
-LEARNING_RATE = 0.001
-
+# =============================================================================
 # Paths
-DATA_DIR = "/app/data"
-MODEL_SAVE_PATH = "/app/model.pth"
+# =============================================================================
+DATA_DIR = "data"
+MODEL_SAVE_PATH = "models/best_model.pth"
+PROCESSED_DATA_DIR = "data/processed"
+
+# =============================================================================
+# Data Split Ratios
+# =============================================================================
+TRAIN_RATIO = 0.8
+VAL_RATIO = 0.1
+TEST_RATIO = 0.1
+RANDOM_SEED = 42
+
+# =============================================================================
+# Model Configuration
+# =============================================================================
+MODEL_NAME = "SZTAKI-HLT/hubert-base-cc"  # Hungarian BERT
+NUM_LABELS = 5  # Understandability scale 1-5
+MAX_LENGTH = 512  # Maximum token length
+
+# =============================================================================
+# Training Hyperparameters
+# =============================================================================
+EPOCHS = 20
+EARLY_STOPPING_PATIENCE = 5
+BATCH_SIZE = 16
+LEARNING_RATE = 2e-5
+WEIGHT_DECAY = 0.01
+WARMUP_RATIO = 0.1
+
+# =============================================================================
+# Loss Function
+# =============================================================================
+# Options: "cross_entropy", "ordinal_cross_entropy", "mse"
+LOSS_TYPE = "ordinal_cross_entropy"
+
+# =============================================================================
+# Evaluation
+# =============================================================================
+EVAL_METRICS = ["accuracy", "macro_f1", "mae", "kappa"]
+
+# =============================================================================
+# API / Frontend
+# =============================================================================
+API_HOST = "0.0.0.0"
+API_PORT = 8000
+GRADIO_PORT = 7860
+
+# =============================================================================
+# Logging
+# =============================================================================
+LOG_DIR = "log"
+LOG_FILE = "log/run.log"

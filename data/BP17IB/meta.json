@@ -1,0 +1,22 @@
+{
+    "otp_2025_10_19.txt": {
+        "source": "https://www.otpbank.hu/static/portal/sw/file/Altalanos_USZ_20250922.pdf",
+        "date": "October 19, 2025"
+    },
+    "rossmann_2025_10_19.txt": {
+        "source": "https://shop.rossmann.hu/aszf?srsltid=AfmBOoo29yOab67zb1oL_Y7dg42_Vx9aOHpF1CwHAln14g0lf7J84VYN",
+        "date": "October 19, 2025"
+    },
+    "yettel_2025_10_19.txt": {
+        "source": "https://static.yettel.hu/documents/ZmluYWxfQVNaRl9UU1pfMjAyNTEwMTUgKDEpLnBkZg/final-aszf-tsz-20251015-1_zgvlezhg.pdf?v=1",
+        "date": "October 19, 2025"
+    },
+    "medamarkt_2025_10_19.txt": {
+        "source": "https://www.mediamarkt.hu/hu/legal/aszf?srsltid=AfmBOopFnjeLjMe8il7FFQen8Ei5eaZH5a4QWuiJRBlir-1fmtJVRsEm",
+        "date": "October 19, 2025"
+    },
+    "alza_2025_10_19.txt": {
+        "source": "https://cdn.alza.cz/Foto/docs/Alza.hu_AltalanosSzerzodesiFeltetelek_B2C_20251002.pdf",
+        "date": "October 19, 2025"
+    }
+}
