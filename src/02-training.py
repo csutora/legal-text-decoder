@@ -10,7 +10,7 @@ import torch
 import torch.nn as nn
 from torch.optim import AdamW
 from torch.optim.lr_scheduler import OneCycleLR
-from transformers import AutoTokenizer, get_linear_schedule_with_warmup
+from transformers import AutoTokenizer, get_cosine_schedule_with_warmup
 from tqdm import tqdm
 import numpy as np
 
@@ -206,25 +206,31 @@ def train():
     class_weights = compute_class_weights(train_labels).to(device)
     logger.info(f"Class weights: {class_weights.tolist()}")
 
-    # Create model
+    # Create model with regularization settings
     logger.info("\nInitializing model...")
+    logger.info(f"Dropout: {config.DROPOUT}")
+    logger.info(f"Frozen encoder layers: {config.FREEZE_ENCODER_LAYERS}")
+    logger.info(f"Weight decay: {config.WEIGHT_DECAY}")
+
     model = LegalTextClassifier(
         model_name=config.MODEL_NAME,
         num_labels=config.NUM_LABELS,
-        dropout=0.1
+        dropout=config.DROPOUT,
+        freeze_encoder_layers=config.FREEZE_ENCODER_LAYERS
     ).to(device)
 
     logger.info(f"Model parameters: {sum(p.numel() for p in model.parameters()):,}")
     logger.info(f"Trainable parameters: {sum(p.numel() for p in model.parameters() if p.requires_grad):,}")
 
-    # Loss function
+    # Loss function with progressive ordinal weighting
     if config.LOSS_TYPE == "ordinal_cross_entropy":
         criterion = WeightedOrdinalLoss(
             num_classes=config.NUM_LABELS,
-            ordinal_weight=0.5,
-            class_weights=class_weights
+            class_weights=class_weights,
+            initial_ordinal_weight=0.2,
+            final_ordinal_weight=0.8
         )
-        logger.info("Using Weighted Ordinal Cross-Entropy Loss")
+        logger.info("Using Progressive Weighted Ordinal Loss (0.2 -> 0.8)")
     else:
         criterion = nn.CrossEntropyLoss(weight=class_weights)
         logger.info("Using Cross-Entropy Loss")
@@ -239,7 +245,7 @@ def train():
     total_steps = len(train_loader) * config.EPOCHS
     warmup_steps = int(total_steps * config.WARMUP_RATIO)
 
-    scheduler = get_linear_schedule_with_warmup(
+    scheduler = get_cosine_schedule_with_warmup(
         optimizer,
         num_warmup_steps=warmup_steps,
         num_training_steps=total_steps
@@ -248,18 +254,24 @@ def train():
     logger.info(f"Total training steps: {total_steps}")
     logger.info(f"Warmup steps: {warmup_steps}")
 
-    # Early stopping
-    early_stopping = EarlyStopping(patience=config.EARLY_STOPPING_PATIENCE, mode='max')
+    # Early stopping based on validation MAE
+    early_stopping = EarlyStopping(patience=config.EARLY_STOPPING_PATIENCE, mode='min')
 
     # Training loop
     logger.info("\nStarting training loop...")
-    best_val_f1 = 0
+    best_val_mae = float('inf')
     training_history = []
 
     for epoch in range(config.EPOCHS):
         logger.info(f"\n{'='*50}")
         logger.info(f"Epoch {epoch + 1}/{config.EPOCHS}")
         logger.info(f"{'='*50}")
+
+        # Update progressive loss weighting
+        if config.LOSS_TYPE == "ordinal_cross_entropy":
+            progress = epoch / max(config.EPOCHS - 1, 1)
+            criterion.set_progress(progress)
+            logger.info(f"Ordinal weight: {criterion.current_ordinal_weight:.2f}")
 
         # Train
         train_metrics = train_epoch(model, train_loader, optimizer, scheduler, criterion, device)
@@ -276,9 +288,9 @@ def train():
             'val': val_metrics
         })
 
-        # Save best model
-        if val_metrics['macro_f1'] > best_val_f1:
-            best_val_f1 = val_metrics['macro_f1']
+        # Save best model based on validation MAE
+        if val_metrics['mae'] < best_val_mae:
+            best_val_mae = val_metrics['mae']
             torch.save({
                 'epoch': epoch + 1,
                 'model_state_dict': model.state_dict(),
@@ -290,10 +302,10 @@ def train():
                     'max_length': config.MAX_LENGTH
                 }
             }, models_dir / "best_model.pth")
-            logger.info(f"  -> New best model saved! (F1: {best_val_f1:.4f})")
+            logger.info(f"  -> New best model saved! (Val MAE: {best_val_mae:.4f})")
 
-        # Early stopping
-        if early_stopping(val_metrics['macro_f1']):
+        # Early stopping based on validation MAE
+        if early_stopping(val_metrics['mae']):
             logger.info(f"\nEarly stopping triggered at epoch {epoch + 1}")
             break
 
@@ -313,7 +325,7 @@ def train():
     with open(history_path, 'w') as f:
         json.dump({
             'training_history': training_history,
-            'best_val_f1': best_val_f1,
+            'best_val_mae': best_val_mae,
             'test_metrics': test_metrics,
             'config': {
                 'model_name': config.MODEL_NAME,

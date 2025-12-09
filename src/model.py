@@ -76,29 +76,42 @@ class WeightedOrdinalLoss(nn.Module):
 
     This combines standard classification loss with ordinal penalties
     to balance between exact class prediction and ordinal consistency.
+
+    Supports progressive scheduling where CE weight decreases and ordinal
+    weight increases over training.
     """
 
     def __init__(
         self,
         num_classes: int = config.NUM_LABELS,
-        ordinal_weight: float = 0.5,
-        class_weights: torch.Tensor = None
+        class_weights: torch.Tensor = None,
+        initial_ordinal_weight: float = 0.2,
+        final_ordinal_weight: float = 0.8
     ):
         super().__init__()
         self.num_classes = num_classes
-        self.ordinal_weight = ordinal_weight
-        self.ce_weight = 1.0 - ordinal_weight
+        self.initial_ordinal_weight = initial_ordinal_weight
+        self.final_ordinal_weight = final_ordinal_weight
+        self.current_ordinal_weight = initial_ordinal_weight
 
         # Standard cross-entropy with optional class weights
         self.ce_loss = nn.CrossEntropyLoss(weight=class_weights)
         self.ordinal_loss = OrdinalCrossEntropyLoss(num_classes)
+
+    def set_progress(self, progress: float):
+        """Update loss weights based on training progress (0.0 to 1.0)."""
+        self.current_ordinal_weight = (
+            self.initial_ordinal_weight +
+            (self.final_ordinal_weight - self.initial_ordinal_weight) * progress
+        )
 
     def forward(self, logits: torch.Tensor, targets: torch.Tensor) -> torch.Tensor:
         """Compute weighted combination of CE and ordinal loss."""
         ce = self.ce_loss(logits, targets)
         ordinal = self.ordinal_loss(logits, targets)
 
-        return self.ce_weight * ce + self.ordinal_weight * ordinal
+        ce_weight = 1.0 - self.current_ordinal_weight
+        return ce_weight * ce + self.current_ordinal_weight * ordinal
 
 
 class LegalTextClassifier(nn.Module):
@@ -113,7 +126,7 @@ class LegalTextClassifier(nn.Module):
         model_name: str = config.MODEL_NAME,
         num_labels: int = config.NUM_LABELS,
         dropout: float = 0.1,
-        freeze_encoder: bool = False
+        freeze_encoder_layers: int = 0
     ):
         super().__init__()
         self.num_labels = num_labels
@@ -122,12 +135,18 @@ class LegalTextClassifier(nn.Module):
         self.config = AutoConfig.from_pretrained(model_name)
         self.bert = AutoModel.from_pretrained(model_name)
 
-        # Optionally freeze encoder layers
-        if freeze_encoder:
-            for param in self.bert.parameters():
+        # Freeze embeddings and first N transformer layers for regularization
+        if freeze_encoder_layers > 0:
+            # Freeze embeddings
+            for param in self.bert.embeddings.parameters():
                 param.requires_grad = False
 
-        # Classification head
+            # Freeze first N encoder layers
+            for i in range(min(freeze_encoder_layers, len(self.bert.encoder.layer))):
+                for param in self.bert.encoder.layer[i].parameters():
+                    param.requires_grad = False
+
+        # Classification head with higher dropout
         hidden_size = self.config.hidden_size
         self.dropout = nn.Dropout(dropout)
         self.classifier = nn.Linear(hidden_size, num_labels)

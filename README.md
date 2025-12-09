@@ -25,33 +25,76 @@ This project implements a **Legal Text Decoder** - a system that analyzes Hungar
 The solution uses a **fine-tuned Hungarian BERT model (HuBERT)** for text classification:
 
 - **Base Model**: `SZTAKI-HLT/hubert-base-cc` - A Hungarian BERT model pretrained on a large Hungarian corpus
-- **Architecture**: BERT encoder + Classification head (768 → 5 classes)
-- **Loss Function**: **Ordinal Cross-Entropy** - A custom loss that treats labels as ordinal, penalizing distant misclassifications more than adjacent ones (e.g., predicting 2 when true is 4 is worse than predicting 3 when true is 4)
+- **Architecture**: BERT encoder + Classification head (768 → 5 classes) with dropout regularization
+- **Loss Function**: **Progressive Weighted Ordinal Loss** - A custom loss combining cross-entropy and ordinal components (see below)
 - **Class Weighting**: Balanced class weights to handle label imbalance
+- **Regularization**: Dropout (0.3), weight decay (0.05), and partial encoder freezing (first 4 layers)
+
+#### Custom Loss Function
+
+The model uses a **Progressive Weighted Ordinal Loss** that combines two components:
+
+1. **Weighted Cross-Entropy**: Standard classification loss with class weights to handle imbalanced data
+2. **Ordinal Cross-Entropy**: Treats labels as ordinal by modeling cumulative probabilities P(Y ≤ k), penalizing predictions that violate ordinal consistency
+
+The key improvement comes from **progressive weighting**: during training, the loss transitions from CE-dominated (80% CE, 20% ordinal) to ordinal-dominated (20% CE, 80% ordinal). This allows the model to:
+- **Early training**: Learn to distinguish all classes, especially rare ones (class 1 has only ~3% of samples)
+- **Late training**: Refine probability distributions to be ordinal-consistent
+
+This approach addresses the challenge of combining class weighting (which can distort ordinal structure) with ordinal loss (which assumes balanced classes).
 
 #### Training Methodology
 
-1. **Data Preprocessing**: Aggregated 3,397 labeled samples from 33 JSON files (Label Studio exports) from 25 different annotators
+1. **Data Preprocessing**: Aggregated and cleaned 3,397 labeled samples from 33 JSON files (Label Studio exports) from 25 different annotators
 2. **Stratified Split**: 80% train / 10% validation / 10% test with stratification by label
-3. **Training**: Fine-tuning with AdamW optimizer, linear warmup scheduler, early stopping (patience=5)
+3. **Training**: Fine-tuning with AdamW optimizer (lr=1e-5), cosine learning rate schedule with warmup, early stopping on validation MAE (patience=5)
 4. **Evaluation**: Accuracy, Macro F1, MAE, Cohen's Kappa (quadratic weighted)
 
 #### Results Summary
 
-| Model | Accuracy | Macro F1 | MAE |
-|-------|----------|----------|-----|
-| Baseline (TF-IDF + LogReg) | 0.36 | 0.30 | 0.97 |
-| HuBERT + Ordinal Loss | TBD | TBD | TBD |
+| Model | Accuracy | Macro F1 | MAE | Kappa |
+|-------|----------|----------|-----|-------|
+| Baseline (TF-IDF + LogReg) | 0.36 | 0.30 | 0.97 | - |
+| HuBERT + Progressive Ordinal Loss | **0.46** | **0.38** | **0.72** | **0.51** |
+
+The model achieves a 28% improvement in accuracy and 26% reduction in MAE compared to the baseline. The Cohen's Kappa of 0.51 indicates moderate ordinal agreement, which is reasonable given the subjective nature of "understandability" ratings from multiple annotators.
+
+Example classifications can be seen below:
+
+```
+"A szerződés létrejöttével a vevő vállalja, hogy a vételárat megfizeti."
+Prediction: 5 - Könnyen érthető (Easy to understand)
+    Label 1: 0.00%
+    Label 2: 0.00%
+    Label 3: 0.01%
+    Label 4: 4.54%
+    Label 5: 95.45%
+
+"A Vtv. 69. § 25. pontja alapján a vasúti társaság Üzletszabályzatának jóváhagyása a Vtv. szerinti va..."
+Prediction: 1 - Nagyon nehezen érthető (Very hard to understand)
+    Label 1: 99.95%
+    Label 2: 0.02%
+    Label 3: 0.02%
+    Label 4: 0.00%
+    Label 5: 0.00%
+```
 
 ### Extra Credit Justification
 
 This project qualifies for the +1 mark based on:
 
-1. **Complete Pipeline**: Full implementation from data preprocessing to web deployment
-2. **Advanced Loss Function**: Custom ordinal cross-entropy loss that respects the ordinal nature of understandability ratings
-3. **ML as a Service**: Gradio-based web interface for interactive text analysis
-4. **Comprehensive Evaluation**: Multiple metrics including Cohen's Kappa for ordinal agreement
-5. **Multi-source Data Handling**: Robust parsing of Label Studio exports from multiple annotators with varying formats
+1. **Complete Pipeline**: Full implementation from data preprocessing to web deployment with Docker containerization
+2. **Novel Loss Function**: Custom **Progressive Weighted Ordinal Loss** that:
+   - Combines cross-entropy and ordinal loss components
+   - Uses progressive scheduling to balance class imbalance handling with ordinal consistency
+   - Addresses the inherent tension between class weighting and ordinal structure
+3. **Advanced Training Techniques**:
+   - Cosine learning rate schedule with linear warmup
+   - Early stopping on MAE (appropriate for ordinal regression)
+   - Regularization via dropout, weight decay, and partial encoder freezing
+4. **ML as a Service**: Gradio-based web interface for interactive text analysis
+5. **Comprehensive Evaluation**: Multiple metrics including Cohen's Kappa (quadratic weighted) for ordinal agreement
+6. **Multi-source Data Handling**: Robust parsing of Label Studio exports from 25 different annotators with varying JSON formats
 
 ### Data Preparation
 
@@ -182,11 +225,14 @@ Key hyperparameters in `src/config.py`:
 | MODEL_NAME | SZTAKI-HLT/hubert-base-cc | Hungarian BERT model |
 | NUM_LABELS | 5 | Understandability classes |
 | MAX_LENGTH | 512 | Max token sequence length |
-| BATCH_SIZE | 16 | Training batch size |
-| LEARNING_RATE | 2e-5 | AdamW learning rate |
+| BATCH_SIZE | 8 | Training batch size |
+| LEARNING_RATE | 1e-5 | AdamW learning rate |
+| WEIGHT_DECAY | 0.05 | L2 regularization |
+| DROPOUT | 0.3 | Dropout rate for classification head |
+| FREEZE_ENCODER_LAYERS | 4 | Freeze first N transformer layers |
 | EPOCHS | 20 | Maximum training epochs |
-| EARLY_STOPPING_PATIENCE | 5 | Early stopping patience |
-| LOSS_TYPE | ordinal_cross_entropy | Loss function type |
+| EARLY_STOPPING_PATIENCE | 5 | Early stopping patience (on MAE) |
+| LOSS_TYPE | ordinal_cross_entropy | Progressive weighted ordinal loss |
 
 ### Requirements
 

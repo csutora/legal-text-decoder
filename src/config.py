@@ -20,17 +20,23 @@ RANDOM_SEED = 42
 # =============================================================================
 MODEL_NAME = "SZTAKI-HLT/hubert-base-cc"  # Hungarian BERT
 NUM_LABELS = 5  # Understandability scale 1-5
-MAX_LENGTH = 512  # Maximum token length
+MAX_LENGTH = 512  # Maximum token length (HuBERT max position embeddings)
 
 # =============================================================================
 # Training Hyperparameters
 # =============================================================================
 EPOCHS = 20
 EARLY_STOPPING_PATIENCE = 5
-BATCH_SIZE = 16
-LEARNING_RATE = 2e-5
-WEIGHT_DECAY = 0.01
+BATCH_SIZE = 8
+LEARNING_RATE = 1e-5
+WEIGHT_DECAY = 0.05
 WARMUP_RATIO = 0.1
+
+# =============================================================================
+# Regularization
+# =============================================================================
+DROPOUT = 0.3  # Dropout rate for classification head
+FREEZE_ENCODER_LAYERS = 4  # Freeze first N transformer layers (0 = none, HuBERT has 12)
 
 # =============================================================================
 # Loss Function
