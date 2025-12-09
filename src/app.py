@@ -140,8 +140,8 @@ def create_app(model_path: str = "models/best_model.pth"):
 
     # Create Gradio interface
     with gr.Blocks(
-        title="Legal Text Decoder",
-        theme=gr.themes.Soft()
+        title="Legal Text Decoder"
+        # theme=gr.themes.Soft() # this worked before, i don't get it :(
     ) as interface:
         gr.Markdown("""
         # Legal Text Decoder
