@@ -54,10 +54,11 @@ This approach addresses the challenge of combining class weighting (which can di
 
 | Model | Accuracy | Macro F1 | MAE | Kappa |
 |-------|----------|----------|-----|-------|
-| Baseline (TF-IDF + LogReg) | 0.36 | 0.30 | 0.97 | - |
+| Baseline (TF-IDF + LogReg) | 0.36 | 0.30 | 0.97 | 0.3325 |
+| Baseline (TF-IDF + SVM) | 0.36 | 0.30 | 0.98 | 0.3190 |
 | HuBERT + Progressive Ordinal Loss | **0.46** | **0.38** | **0.72** | **0.51** |
 
-The model achieves a 28% improvement in accuracy and 26% reduction in MAE compared to the baseline. The Cohen's Kappa of 0.51 indicates moderate ordinal agreement, which is reasonable given the subjective nature of "understandability" ratings from multiple annotators.
+The model achieves around a 28% improvement in accuracy and around a 26% reduction in MAE compared to the baselines. The Cohen's Kappa of 0.51 indicates moderate ordinal agreement, which is reasonable given the subjective nature of "understandability" ratings from multiple annotators.
 
 Example classifications can be seen below:
 
