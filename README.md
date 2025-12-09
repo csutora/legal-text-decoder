@@ -1,5 +1,7 @@
 # Legal Text Decoder
 
+![Gradio interface](interface.png) 
+
 ## Project Details
 
 ### Project Information
@@ -254,6 +256,9 @@ source venv/bin/activate
 
 # Install dependencies
 pip install -r requirements.txt
+
+# Or, if you are on a system with nix available, you can just run the python commands in a nix-shell with the proper dependencies:
+NIXPKGS_ALLOW_UNFREE=1 nix-shell -p python312 python312Packages.torchWithCuda python312Packages.transformers python312Packages.scikit-learn python312Packages.tqdm python312Packages.numpy python312Packages.pandas python312Packages.joblib python312Packages.gradio
 ```
 
 #### Running the Pipeline
