@@ -98,6 +98,7 @@ This project qualifies for the +1 mark based on:
 4. **ML as a Service**: Gradio-based web interface for interactive text analysis
 5. **Comprehensive Evaluation**: Multiple metrics including Cohen's Kappa (quadratic weighted) for ordinal agreement
 6. **Multi-source Data Handling**: Robust parsing of Label Studio exports from 25 different annotators with varying JSON formats
+7. **Task-optimized Performance**: Focusing on both label accuracy and a low absolute error makes the model function the closest to how the best humans would rank the texts. 
 
 ### Data Preparation
 
