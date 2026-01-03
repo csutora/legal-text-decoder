@@ -7,7 +7,7 @@
 ### Project Information
 
 - **Selected Topic**: Legal Text Decoder
-- **Student Name**: Márton Csutora
+- **Student Name**: Nara Csutora
 - **Aiming for +1 Mark**: Yes
 
 ### Solution Description
